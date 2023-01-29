@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster+Two:ital@1&display=swap');
+
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+
+
+
+body{
+  background-image:url(img/montagne.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color:#193b2f;
+  
+}
+
+h1{
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Lobster Two', cursive;
+  text-align: center;
+  color:#193b2f;
+  font-size:clamp(35px,5vw,70px);
+  margin-bottom:10%;
+  margin-top:5%;
+}
+
+.bordurePrincipal
+{
+ 
+ 
+  border:2px black solid;
+ 
+  width:calc(50%);
+  margin:5% auto;
+  /*height:70%*/
+  font-size:16px;
+  border-radius:20px;
+  background-color:#4ba7f2;
+ 
+ 
+  
+}
+
+.formulaireImc
+{
+
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width:100%;
+  
+ 
+}
+
+.tailleCm,.tailleKg
+{
+  display:inline-block;
+  font-weight:bold;
+  margin-bottom:2.5%;
+  font-size:1.5em;
+  
+}
+
+.resultatTailleCm,.resultatTailleKg
+{
+  display:block;
+  width:100%;
+  border-radius:20px;
+  height:30px;
+  padding:5px;
+  text-align:center;
+  border:none;
+  box-shadow:0 5px 5px rgba(0,0 ,0 ,0.3);
+  outline:none;
+  transition-property:background-color,color;
+  transition-duration:0.5s;
+  
+}
+
+input:focus
+{
+background-color:#193b2f ;
+
+}
+
+input:focus::placeholder{
+    color:white;
+    
+}
+
+.taille,.poids,.boutonValidation,.numeroImc,.resultatImc
+{
+  margin-bottom: 5%;
+  
+  
+}
+
+.boutonValidation
+{
+  display:block;
+  font-size:1.5em;
+  font-weight:bold;
+  color:white;
+  background-color:#144634;
+  padding:2.5% 5%;
+  cursor:pointer;
+  border-radius:20px;
+  position:relative;
+  box-shadow:0 6px #193b2f;
+}
+
+.boutonValidation:hover
+{
+  box-shadow:0 4px #193b2f;
+  top:2px;
+}
+
+.boutonValidation:active
+{
+  box-shadow: 0 0 #193b2f;
+  top:6px;
+}
+
+.numeroImc,.resultatImc
+{
+  font-size:1.5em;
+  font-weight:bold;
+}
+
+@media screen and (max-width:1008px)
+{
+  .tailleCm,.tailleKg
+  {
+    font-size:1.2em;
+    
+  }
+  
+}
+
+@media screen and (max-width:1140px)
+{
+  .bordurePrincipal
+  {
+  
+    width:calc(75%);
+  }
+}
+
+@media screen and (max-width:785px)
+{
+  .tailleCm,.tailleKg{
+    font-size:1em;
+  }
+  .bordurePrincipal{
+    margin-top:10%;
+    width:calc(95%);
+  }
+
+ 
+}
+
+@media screen and (max-width:410px)
+{
+  .bordurePrincipal
+  {
+    margin-top:20%;
+  }
+
+  
+  
+}
+
+@media screen and (max-width:334px)
+{
+  .tailleCm,.tailleKg,.numeroImc,.resultatImc,.boutonValidation{
+    font-size:0.8em;
+  }
+}

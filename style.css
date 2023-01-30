@@ -89,6 +89,11 @@ h1{
   
 }
 
+.resultatTailleCm:focus,.resultatTailleKg:focus
+{
+  color:white;
+}
+
 input:focus
 {
 background-color:#193b2f ;
